@@ -1,0 +1,68 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'mongod' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData mongod
+8 silly fetchNamedPackageData mongod
+9 silly mapToRegistry name mongod
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/mongod
+13 verbose request uri https://registry.npmjs.org/mongod
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 4:13:10 PM
+16 verbose request id d5f92123dc0e3155
+17 http request GET https://registry.npmjs.org/mongod
+18 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 103.245.222.162:443
+19 info attempt registry request try #2 at 4:13:21 PM
+20 http request GET https://registry.npmjs.org/mongod
+21 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 103.245.222.162:443
+22 info attempt registry request try #3 at 4:14:21 PM
+23 http request GET https://registry.npmjs.org/mongod
+24 silly fetchPackageMetaData Error: connect ECONNREFUSED 103.245.222.162:443
+24 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:856:11)
+24 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:879:20)
+24 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1053:14)
+24 silly fetchPackageMetaData  error for mongod { [Error: connect ECONNREFUSED 103.245.222.162:443]
+24 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+24 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+24 silly fetchPackageMetaData   syscall: 'connect',
+24 silly fetchPackageMetaData   address: '103.245.222.162',
+24 silly fetchPackageMetaData   port: 443 }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Starting
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: connect ECONNREFUSED 103.245.222.162:443
+30 verbose stack     at Object.exports._errnoException (util.js:856:11)
+30 verbose stack     at exports._exceptionWithHostPort (util.js:879:20)
+30 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1053:14)
+31 verbose cwd /Users/apple/Desktop/arjunahuja
+32 error Darwin 15.3.0
+33 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "mongod"
+34 error node v5.6.0
+35 error npm  v3.6.0
+36 error code ECONNREFUSED
+37 error errno ECONNREFUSED
+38 error syscall connect
+39 error Error: connect ECONNREFUSED 103.245.222.162:443
+39 error     at Object.exports._errnoException (util.js:856:11)
+39 error     at exports._exceptionWithHostPort (util.js:879:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1053:14)
+39 error  { [Error: connect ECONNREFUSED 103.245.222.162:443]
+39 error   code: 'ECONNREFUSED',
+39 error   errno: 'ECONNREFUSED',
+39 error   syscall: 'connect',
+39 error   address: '103.245.222.162',
+39 error   port: 443 }
+40 error If you are behind a proxy, please make sure that the
+40 error 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
